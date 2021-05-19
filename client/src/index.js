@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Test from './components/Test.js';
 import Navbar from './components/Navbar';
+import './components/customScss/index.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
