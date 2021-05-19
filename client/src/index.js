@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Navbar from './components/Navbar';
 import reportWebVitals from './reportWebVitals';
+import './components/customScss/index.scss';
+
 import {
   BrowserRouter as Router,
   Switch,

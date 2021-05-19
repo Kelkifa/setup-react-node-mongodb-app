@@ -3,7 +3,6 @@ import './Navbar.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import NavButton from './NavButton.js';
-import './customScss/index.scss';
 
 class Navbar extends React.Component {
     clickHandler() {
@@ -25,7 +24,7 @@ class Navbar extends React.Component {
                         <NavButton
                             btnClass="btn--nav"
                             name="Test"
-                            link="/home"
+                            link="/test"
                             elm="h2" />
                         <NavButton
                             btnClass="btn--nav"
