@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.scss';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavButton from './NavButton.js';
 import './customScss/index.scss';
 
@@ -14,38 +15,38 @@ class Navbar extends React.Component {
             <Router>
                 <div id="navbar">
                     <div className="left" >
-                        <Link to="/home">
-                            <NavButton
-                                btnClass="btn--nav"
-                                name="Home"
-                                elm="h1" />
-                        </Link>
+                        <NavButton
+                            btnClass="btn--nav"
+                            name="Home"
+                            link="/home"
+                            elm="h1" />
                     </div>
                     <div className="right">
-                        <Link to="/service">
-                            <NavButton
-                                btnClass="btn--nav"
-                                name="Words"
-                                elm="h2" />
-                        </Link>
-                        <Link to="/word">
-                            <NavButton
-                                btnClass="btn--nav"
-                                name="Documents"
-                                elm="h2" />
-                        </Link>
-                        <Link to="/anime">
-                            <NavButton
-                                btnClass="btn--nav"
-                                name="Animes"
-                                elm="h2" />
-                        </Link>
-                        <Link to="/login">
-                            <NavButton
-                                btnClass="btn--nav btn--login"
-                                name="Sign in"
-                                elm="h2" />
-                        </Link>
+                        <NavButton
+                            btnClass="btn--nav"
+                            name="Test"
+                            link="/home"
+                            elm="h2" />
+                        <NavButton
+                            btnClass="btn--nav"
+                            name="Words"
+                            link="/home"
+                            elm="h2" />
+                        <NavButton
+                            btnClass="btn--nav"
+                            name="Documents"
+                            link="/document"
+                            elm="h2" />
+                        <NavButton
+                            btnClass="btn--nav"
+                            name="Animes"
+                            link="/anime"
+                            elm="h2" />
+                        <NavButton
+                            btnClass="btn--nav btn--login"
+                            name="Sign in"
+                            link="/login"
+                            elm="h2" />
                     </div>
                 </div >
             </Router>
