@@ -1,5 +1,19 @@
+.fluid{
+    padding-left:15px;
+    padding-right:15px;
+}
+button:hover{
+    cursor: pointer;
+}
 .btn--nav{ 
+    height: 100%;
+    margin:0px 15px;
     color:white; 
     background-color:transparent;
     border:hidden;
 }
+.btn--login{
+    border: 2px solid white;
+    padding: 7px 20px;
+}
+

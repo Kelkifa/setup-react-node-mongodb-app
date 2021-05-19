@@ -1,5 +1,7 @@
 $navbar_l_r_padding: 50px;
 #navbar{ 
+    height:60px;
+    width:100%;
     display:flex;
     align-items: center;
     background-color:#181718;
@@ -10,10 +12,12 @@ $navbar_l_r_padding: 50px;
     }
     .right{
         display:flex;
-        h2{
-            padding: 0px 10px;
-        }
+        align-items:center;
         padding-right: $navbar_l_r_padding;
+    }
+    h1, h2{
+        padding:0px;
+        margin:0px;
     }
 }
 

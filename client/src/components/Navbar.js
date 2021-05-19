@@ -25,18 +25,24 @@ class Navbar extends React.Component {
                         <Link to="/service">
                             <NavButton
                                 btnClass="btn--nav"
-                                name="Services"
+                                name="Words"
                                 elm="h2" />
                         </Link>
-                        <Link to="/product">
+                        <Link to="/word">
                             <NavButton
                                 btnClass="btn--nav"
-                                name="Products"
+                                name="Documents"
                                 elm="h2" />
                         </Link>
-                        <Link to="/product">
+                        <Link to="/anime">
                             <NavButton
                                 btnClass="btn--nav"
+                                name="Animes"
+                                elm="h2" />
+                        </Link>
+                        <Link to="/login">
+                            <NavButton
+                                btnClass="btn--nav btn--login"
                                 name="Sign in"
                                 elm="h2" />
                         </Link>
