@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Test from './components/Test.js';
+import Navbar from './components/Navbar';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Navbar></Navbar>
     <Test />
   </React.StrictMode>,
   document.getElementById('root')
