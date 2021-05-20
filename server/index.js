@@ -3,11 +3,11 @@ const express = require('express');
 const app = express();
 
 /** Models */
-const anime = require('./app/models/anime');
-
-/** Connect to db */
+//connect db
 const db = require('./app/cores/connectDb');
 db.connect();
+//difine models
+const anime = require('./app/models/anime');
 
 app.get('/', (req, res) => {
     anime.find()
