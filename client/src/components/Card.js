@@ -6,9 +6,11 @@ class Card extends React.Component {
         return (
             <div className="card">
                 <img src={this.props.imgLink} />
-                <p>{this.props.children}</p>
-                <div className="card-btn-container">
-                    <button className="btn--card">Go Somewhere</button>
+                <div className="cnt-card scroll--custom scroll--blue">
+                    <p>{this.props.children}</p>
+                    <div className="card-btn-container">
+                        <button className="btn--card">Go Somewhere</button>
+                    </div>
                 </div>
             </div>
         )
