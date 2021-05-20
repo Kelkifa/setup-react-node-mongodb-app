@@ -12,6 +12,7 @@ const anime = require('./app/models/anime');
 app.get('/', (req, res) => {
     anime.find()
         .then(data => {
+            res.header("Access-Control-Allow-Origin", "*");
             res.json(data);
         })
 });

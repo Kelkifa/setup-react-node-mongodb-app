@@ -4,7 +4,7 @@ import './Card.scss';
 class Card extends React.Component {
     render() {
         return (
-            <div className="card">
+            <div className={"card " + this.props.addClass}>
                 <img src={this.props.imgLink} />
                 <div className="cnt-card scroll--custom scroll--blue">
                     <p>{this.props.children}</p>
