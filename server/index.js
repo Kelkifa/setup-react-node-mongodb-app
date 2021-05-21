@@ -1,4 +1,4 @@
-const port = 8000;
+const port = process.env.PORT || 8080;
 const express = require('express');
 const app = express();
 
@@ -20,7 +20,14 @@ app.get('/anime-data', (req, res) => {
             res.json(data);
         })
 });
+app.get('/', (req, res) => {
+    anime.find()
+        .then(data => {
+            // res.header("Access-Control-Allow-Origin", "*");
+            res.json(data);
+        })
+});
 
-app.listen(process.env.PORT || port, () => {
+app.listen(port, () => {
     console.log(`Web at localhost:${port}`);
 });
