@@ -22,7 +22,7 @@ class Anime extends React.Component {
         }
         var content = items.map(item => {
             return (
-                <Card imgLink={item.image}
+                <Card key={item._id} imgLink={item.img}
                     addClass="mr-r-20 mr-b-20">
                     {item.description}
                 </Card>
