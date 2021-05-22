@@ -8,7 +8,7 @@ const animes = new Schema(
     {
         name: { type: String },
         description: { type: String },
-        image: { type: String },
+        img: { type: String },
     },
     {
         timestamps: true
