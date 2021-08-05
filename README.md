@@ -58,6 +58,8 @@ server
 
 ```rmdir /S .git```
 
+- Change Mongodb Url in file connectDb.js to your db
+
 ## Src
 
 - Setup to deloy to heroku: https://www.youtube.com/watch?v=xgvLP3f2Y7k
