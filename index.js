@@ -6,9 +6,9 @@ const path = require('path');
 //connect db
 const db = require('./server/app/cores/connectDb');
 db.connect();
-//difine models
-const anime = require('./server/app/models/anime');
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 /** cors */
 // --> Add this
 // ** MIDDLEWARE ** //
@@ -31,11 +31,7 @@ app.use(cors(corsOptions));
 
 
 app.get('/api/', (req, res) => {
-    anime.find()
-        .then(data => {
-            // res.header("Access-Control-Allow-Origin", "*");
-            res.json(data);
-        })
+    res.json({ success: false, message: "OK" });
 });
 
 // --> Add this
